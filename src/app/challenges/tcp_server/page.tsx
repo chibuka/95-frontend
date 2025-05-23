@@ -53,8 +53,8 @@ export default function Dashboard() {
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     */
-      const githubToken = process.env.GITHUB_TOKEN;
-      // const githubToken = data.session?.provider_token;
+      //   const githubToken = process.env.GITHUB_TOKEN;
+      const githubToken = data.session?.provider_token;
 
       if (!githubToken) {
         alert("GitHub token not available. Please re-login.");
